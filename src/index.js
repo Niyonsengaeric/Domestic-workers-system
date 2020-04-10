@@ -24,4 +24,8 @@ app.listen(port, () => {
   console.log(`App listening on port ${port}...`);
 });
 
+app.use((req, res) => res.status(404).send({
+  status: 404,
+  error: 'Not Found!',
+}));
 export default app;

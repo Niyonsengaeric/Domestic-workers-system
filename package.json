@@ -9,7 +9,7 @@
     "@babel/node": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
     "@babel/register": "^7.8.3",
-    "@babel/runtime": "^7.8.3",
+    "@babel/runtime": "^7.9.2",
     "@hapi/joi": "^17.1.0",
     "bcrypt": "^3.0.7",
     "body-parser": "^1.19.0",
@@ -46,6 +46,10 @@
     "migrateTest": "sequelize db:migrate:undo:all && sequelize db:migrate",
     "build": "babel src --out-dir dist --source-maps inline --copy-files",
     "start": "nodemon dist/index.js"
+  },
+  "engines": {
+    "node": "12.14.1",
+    "npm": "6.13.4"
   },
   "repository": {
     "type": "git",
